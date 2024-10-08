@@ -1,0 +1,162 @@
+.footer_main{
+    
+    width: 100%;
+    position: relative;
+	/* margin-top: -25vh; */
+	height: 25vh;
+    bottom: 0;
+    background-color: rgb(255, 228, 73);
+    display: flex;
+    justify-content:space-evenly;
+
+	
+}
+
+.first_column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+}
+
+.info_wrapper{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.logo_icon{
+    height: 60%;
+    justify-self:flex-start;
+    min-width: 64px;
+
+}
+.footer_logo{
+    font-weight: 10;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;
+}
+
+.footer_copyright{
+    margin-top: 0;
+    opacity: 0.4;
+    margin-left: 25%;
+    font-size: 67%;
+
+}
+.footer_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+}
+
+.network{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 8%;  
+    margin-left: 7%;  
+}
+.icon{
+    width: 30%;
+    height: 30%;
+}
+
+.a{
+    text-decoration: none;
+    color: #213053;
+    margin-bottom: 15px;
+    font-size: 85%;
+}
+
+.link{
+    text-decoration: none;
+    color: #213053;
+    margin-top: 0;
+}
+
+@media (min-width: 770px){
+    .mobile_footer{
+        display: none;
+    }
+}
+
+
+@media (max-width: 770px){
+.footer_main{
+    display: none;
+}
+
+.mobile_footer{
+    width: 100%;
+    position: fixed;
+	
+	height: 20vh;
+    bottom: 0;
+    background-color: rgb(255, 228, 73);
+    display: flex;
+    justify-content:center;
+    align-items:start;
+
+}
+
+.mobile_contacts{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 100px;
+     */
+}
+
+.mobfooter_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobh{
+    margin-bottom: 0.5vh;
+
+}
+
+.moblink{
+    text-decoration: none;
+    color: #2d313a;
+    margin-top: 1vh;    
+    font-size: 15px;
+
+}
+
+.mobicong{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 3vh; */
+    margin-left: 5vw;
+}
+
+.mobicon{
+    width: 60%;
+    height: 60%;
+}
+
+.mobfooter_copyright{
+    font-size: 80%;
+    opacity: 50%;
+}
+
+
+}
+
