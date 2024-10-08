@@ -1,0 +1,173 @@
+.card{
+    width: 250px;
+    height: 270px;
+    font-size: 14px;
+    padding-left: 100px;
+    margin-bottom: 20vh;
+    
+    
+}
+
+.additionalElementsWrapper{
+    display: flex;
+    justify-items: row;
+    justify-content:space-between;
+}
+
+.discounttag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 55px;
+    height: 30px;
+    background-color: rgb(240, 6, 6);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.favorite{
+    display: none;   
+}
+
+.fakecheckbox{
+    position:relative;
+    top: 0;
+    right: 10;
+
+
+    margin-left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../assets/images/favorite_item.svg);
+
+}
+
+.favorite:checked + .fakecheckbox {
+    background: url(../../assets/images/checkbox_checked.png);
+}
+
+.favorite:hover +.fakecheckbox{
+    background: url(../../assets/images/checkbox_checked.png);
+}
+
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.picture{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.previousprice{
+    text-decoration: line-through;
+    font-size: 11px;
+}
+
+.disforprice{
+    font-weight:bold;
+    margin-bottom: 0;
+    color:  rgb(240, 6, 6);
+}
+
+.price{
+    font-weight:bold;
+    margin-bottom: 0;
+
+}
+
+.weight{
+    opacity: 50%;
+    font-size: 10px;
+    margin-bottom: 0;
+
+}
+
+.button{
+    border-radius: 30px;
+    width: 90px;
+    height: 28px;
+    background-color: rgb(255, 228, 73);
+    border: none;
+    font-weight:bold;
+    margin-bottom: 0;
+    font-size: 13px;
+
+}
+
+@media (max-width: 770px){
+    .card{
+        min-width: 250px;
+        min-height: 300px;
+        font-size: 20px;
+        margin-bottom: 7vh;
+       
+    }
+
+    .discounttag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        width: 65px;
+        height: 35px;
+        background-color: rgb(240, 6, 6);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .fakecheckbox{
+        position:relative;
+        top: 0;
+        right: 0;
+    
+    
+        margin-left: 10px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../../assets/images/favorite_item.svg);
+    
+    }
+
+    .previousprice{
+        text-decoration: line-through;
+        font-size: 16px;
+    }
+
+    .weight{
+        opacity: 50%;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .button{
+        border-radius: 30px;
+        width: 40vw;
+        height: 60px;
+        background-color: rgb(255, 228, 73);
+        border: none;
+        font-weight:bold;
+        margin-bottom: 15px;
+        font-size: 18px;
+    
+    }
+
+    .favorite:checked + .fakecheckbox {
+        background: url(../../assets/images/mobile\ checked.png);
+        width: 32px;
+        height: 32px;
+    }
+    
+    .favorite:hover + .fakecheckbox{
+        background: url(../../assets/images/mobile\ checked.png);
+        width: 32px;
+        height: 32px;
+    }
+}
